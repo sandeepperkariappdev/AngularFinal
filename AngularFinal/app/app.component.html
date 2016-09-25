@@ -1,0 +1,31 @@
+<!--<h1>
+  {{title}}
+</h1>
+<header></header>
+<side-nav></side-nav>-->
+<div class="container-fluid">
+    <!--HEADER-->
+
+      <header></header>
+  
+
+
+<!--CONTENT-->
+  <div class="row page-content">
+      <!--SIDE NAV-->
+    <div class="col-md-2 side-nav-parent" style="padding-top: 2%;">
+       <side-nav></side-nav>
+    </div>
+    <!--LEFT CONTENT-->
+    <div class="col-md-10" style="padding-top: 2%;">
+       <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!--FOOTER-->
+  <div class="row">
+      <nav class="navbar navbar-default navbar-bottom">
+        <div class="container">
+        </div>
+    </nav>
+  </div>
+</div>
