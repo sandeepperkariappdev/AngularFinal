@@ -7,13 +7,15 @@ import { HeaderComponent } from '../app/header/header.component';
 import { HomeModule } from '../app/home/home.module';
 import { ContactModule } from '../app/contact/contact.module';
 import { HttpModule } from '@angular/http';
+import { SettingsModule } from '../app/settings/settings.module';
 @NgModule({
   imports:[
     BrowserModule,
     routing,
     HttpModule,
     HomeModule,
-    ContactModule
+    ContactModule,
+    SettingsModule
     ],
   declarations: [ AppComponent,SideNavComponent,HeaderComponent ],
   providers: [

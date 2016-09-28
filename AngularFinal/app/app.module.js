@@ -17,6 +17,7 @@ var header_component_1 = require('../app/header/header.component');
 var home_module_1 = require('../app/home/home.module');
 var contact_module_1 = require('../app/contact/contact.module');
 var http_1 = require('@angular/http');
+var settings_module_1 = require('../app/settings/settings.module');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,7 +28,8 @@ var AppModule = (function () {
                 app_routing_1.routing,
                 http_1.HttpModule,
                 home_module_1.HomeModule,
-                contact_module_1.ContactModule
+                contact_module_1.ContactModule,
+                settings_module_1.SettingsModule
             ],
             declarations: [app_component_1.AppComponent, sidenav_component_1.SideNavComponent, header_component_1.HeaderComponent],
             providers: [

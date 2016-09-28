@@ -3,6 +3,8 @@ import { Routes, RouterModule }  from '@angular/router';
 
 import { ContactComponent }  from '../../app/contact/contact.component';
 import { HomeComponent }   from '../../app/home/home.component';
+import { SettingsComponent }   from '../../app/settings/settings.component';
+
 
 export const SideNavRoutes:Routes =[
     {
@@ -12,6 +14,10 @@ export const SideNavRoutes:Routes =[
     {
         path:'Contact',        
         component:ContactComponent
+    },
+    {
+        path:'settings',        
+        component:SettingsComponent
     }
 ];
 

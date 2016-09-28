@@ -9,19 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var NeedHelpComponent = (function () {
-    function NeedHelpComponent() {
+var SettingsComponent = (function () {
+    function SettingsComponent() {
+        this.title = 'app works!';
     }
-    NeedHelpComponent = __decorate([
+    SettingsComponent = __decorate([
         core_1.Component({
-            moduleId: module.id,
-            selector: 'needhelp',
-            templateUrl: 'needhelp.component.html',
-            styleUrls: ['needhelp.component.css']
+            templateUrl: 'app/settings/settings.component.html',
+            styleUrls: ['app/settings/settings.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], NeedHelpComponent);
-    return NeedHelpComponent;
+    ], SettingsComponent);
+    return SettingsComponent;
 }());
-exports.NeedHelpComponent = NeedHelpComponent;
-//# sourceMappingURL=needhelp.component.js.map
+exports.SettingsComponent = SettingsComponent;
+//# sourceMappingURL=settings.component.js.map

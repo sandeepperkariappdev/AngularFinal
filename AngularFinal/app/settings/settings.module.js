@@ -9,19 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var NeedHelpComponent = (function () {
-    function NeedHelpComponent() {
+var forms_1 = require('@angular/forms');
+var common_1 = require('@angular/common');
+var settings_component_1 = require('../../app/settings/settings.component');
+var SettingsModule = (function () {
+    function SettingsModule() {
     }
-    NeedHelpComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'needhelp',
-            templateUrl: 'needhelp.component.html',
-            styleUrls: ['needhelp.component.css']
+    SettingsModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                common_1.CommonModule,
+                forms_1.FormsModule
+            ],
+            declarations: [
+                settings_component_1.SettingsComponent
+            ],
+            providers: []
         }), 
         __metadata('design:paramtypes', [])
-    ], NeedHelpComponent);
-    return NeedHelpComponent;
+    ], SettingsModule);
+    return SettingsModule;
 }());
-exports.NeedHelpComponent = NeedHelpComponent;
-//# sourceMappingURL=needhelp.component.js.map
+exports.SettingsModule = SettingsModule;
+//# sourceMappingURL=settings.module.js.map
